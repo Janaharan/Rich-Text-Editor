@@ -1,0 +1,54 @@
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.textButton {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 17px;
+    border-radius: 20px;
+    background-color: #e4e1e1;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.textButton:hover {
+    opacity: 0.7;
+}
+
+.textButton:active {
+    opacity: 0.2;
+    transition: opacity 0.2s;
+}
+
+.textButton .tImg {
+    width: 14px;
+    margin-top: 1px;
+}
+
+.textButton p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .textButton {
+        padding: 5px 10px; 
+        font-size: 0.7rem; 
+    }
+
+    .textButton .tImg {
+        width: 12px; 
+    }
+    
+    .buttonContainer {
+        margin-top: 60px; 
+    }
+    
+}

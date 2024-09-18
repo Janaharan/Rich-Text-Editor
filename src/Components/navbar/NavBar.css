@@ -1,0 +1,68 @@
+.navContainer {
+  width: 100vw;
+  min-height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 20px;
+}
+
+/* Navbar left */
+
+.navLeft {
+  min-width: 45%;
+}
+
+.navLeft .logo {
+  width: 45px;
+}
+
+/* Navbar Right */
+
+.navRight {
+  min-width: 55%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navRight div {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.navRight div:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight div:active {
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.navRight .undo-icon,
+.navRight .redo-icon {
+  width: 30px;
+}
+
+@media (max-width: 600px) {
+  .navContainer {
+    width: 100vw;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+  }
+  .navRight .undo-icon,
+  .navRight .redo-icon {
+    width: 20px;
+  }
+  .navRight {
+    gap: 20px;
+    font-size: small;
+  }
+
+  .navLeft .logo {
+    width: 25px;
+  }
+}
